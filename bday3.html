@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>part-3</title>
+	<link rel="stylesheet" type="text/css" href="bday.css">
+</head>
+<body>
+	
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="ASOK0795.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="CLFH7595.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="GDXL8986.jpg" style="width:100%">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="IMG_E1288.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="OCEI0625.jpg" style="width:100%">
+ 
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="RXPR0785.jpg" style="width:50%;padding-left: 25%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="SOXS1479.jpg" style="width:65%;padding-left: 20%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="SUNF7373.jpg" style="width:45%;padding-left: 25%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="VNXQ4896.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="TFNGE5947.jpg" style="width:105%">
+  
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<audio controls>
+<source src="Believer.Mp3" type="audio/mpeg">
+</audio>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
